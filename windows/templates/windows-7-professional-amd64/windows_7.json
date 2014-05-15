@@ -2,9 +2,9 @@
     "builders": [
         {
             "type": "virtualbox-iso",
-            "iso_url": "../../iso/en_windows_7_professional_x64_dvd_x15-65805.iso",
+            "iso_url": "v:/Microsoft/Iso/Windows_7_Professional_with_Service_Pack_1_64_bit_English_X17-24281.ISO",
             "iso_checksum_type": "md5",
-            "iso_checksum": "7b7af5fe3a01e9fd76de4dacb45a796b",
+            "iso_checksum": "338f3245d68527db47b8a44e55317d0a",
             "headless": false,
             "boot_wait": "2m",
             "ssh_username": "vagrant",
@@ -19,7 +19,6 @@
                 "../../scripts/runonce.bat",
                 "../../scripts/ps.bat",
                 "../../scripts/downloadFile.vbs",
-                "../../scripts/powershell2.ps1",
                 "../../scripts/install-cygwin-sshd.bat",
                 "../../scripts/enable-admin.bat",
                 "../../scripts/vagrant-ssh.bat",
