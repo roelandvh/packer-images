@@ -1,4 +1,9 @@
 
+REM Hack.
+if "%PROCESSOR_ARCHITECTURE%"=="" (
+    SET PROCESSOR_ARCHITECTURE=AMD64
+)
+
 if "%PROCESSOR_ARCHITECTURE%"=="AMD64" (
     if not exist "C:\Windows\Temp\7z920-x64.msi" (
         C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command "(New-Object System.Net.WebClient).DownloadFile('http://downloads.sourceforge.net/sevenzip/7z920-x64.msi', 'C:\Windows\Temp\7z920-x64.msi')" <NUL
